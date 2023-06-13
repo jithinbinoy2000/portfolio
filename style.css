@@ -1,0 +1,245 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto slab', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #f0eee9;
+
+
+}
+.navbar{
+    display: flex;
+   width: 90%; /*space   btw thwx` content diplay on the right */
+    justify-content: space-between;
+    margin-left: 2%;
+    align-items: center; /*align at the center of image */
+}
+.logo{
+width: 8%;
+}
+.listitem{
+    display: inline-block;
+    list-style: none; /*to hide dots in ul */
+    margin: 10px 10px;
+
+}
+.links{
+   text-decoration: none;   /* to avoid link display */
+    font-weight: 900px;
+    font-family: 'Pangolin', cursive;
+    color: #000000;
+    /* psuedo class define a special state of an element 
+    selector:pseudo-class{proprty:value;}*/
+
+
+}
+.links:hover{
+    color:#fc3200;
+    font-size: larger;
+  
+}
+
+.title{
+    margin-left: 2%;
+    margin-top: 13%;
+}
+.heading{
+    font-size: 50px;
+    margin-bottom: 2%;
+}
+ #lastname{ /*decentent selector */
+    color: #fc3200;
+    font-size: 50px;
+}
+.download{
+    background-color:#00bbff;
+    padding: 20px;
+    text-decoration: none;
+    color: #f0eee9;
+    font-weight: 800;
+   display: inline-block;  /* to display as an inline and a separate block */
+    margin: 30px 0px;
+    border-radius: 8px;
+    font-family: 'Pangolin', cursive;
+
+}
+.images{
+    width: 45%;
+    height: 50%;
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
+
+}
+.imggroup{
+    position: absolute;
+    height: 100%;
+
+
+    /* setting initial value */
+    border: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: bottom 1s, left 2s;
+    /* transition: left 5s; */
+}
+.images:hover #shape{
+     bottom: 70px;
+}
+.images:hover #girl{
+    left:40%;
+}
+#about{
+    position: absolute;
+ 
+   margin: 15% 8% 0 3%;
+}
+.headings{
+    text-align: center;
+    margin-top: 200px;
+}
+.headings h2{
+    text-align: center;
+}
+.headings span{
+    color: green;
+}
+.about_text{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.about_img img{
+    width: 18%;
+    border-radius: 10px;
+}
+.about_text{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+}
+.information{
+    margin: 1rem 0 0 0;
+}
+.info-box{
+ display: flex;
+ align-items: center;
+ margin: 0 0 1rem 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+#skill{
+    margin: 8% 8% 0px 8%;
+}
+.skill_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.skill-img img{
+    width: 90%;
+    object-position: center;
+    padding-left: 4rem;
+}
+.bar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.bar-container h3,span{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #000000;
+}
+.base-bar{
+    width: 100%;
+    height: .5rem;
+    background-color: #000000;
+    border-radius: 5rem;
+    position: absolute;
+    bottom: 0px;
+
+}
+.html-bar{
+    background-color: #ffea00;
+    width: 90%;
+}
+.css-bar{
+    background-color:#ffee00 ;
+    width: 92%;
+}
+.js-bar{
+    background-color: #ffee00;
+    width: 70%;
+}
+.react-bar{
+    background-color: #ffee00;
+    width: 80%;
+}
+.icon-set{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-top: 2vh;
+   
+}
+.icon, .up-arrow {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* border: solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 2vh;
+}
+.icon i{
+    font-size: 30px;
+    color: #000000;
+   
+}
+.icon:hover{
+    background-image: linear-gradient(to right,indigo,red);
+
+}
+.icon:hover i{
+    color: #f0eee9;
+    animation: shake 3s;
+}
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);   
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+                                             
+}
+footer{
+    margin-top: 3rem;
+}
+.up-arrow{
+    float: right;
+    margin-right: 2%;
+    background-image: radial-gradient(orange,yellow,white);
+}
+.up-arrow:hover i{
+/* background-image: linear-gradient(to right, purple,red); */
+color:white;
+}
